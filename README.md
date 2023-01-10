@@ -40,7 +40,7 @@ JDBC URL: jdbc:h2:mem:addresses
 username: admin
 password: 
 ```
-##Instalação e Uso
+## Instalação e Uso
 1. Clone o repositório, após starte o projeto em sua IDE de preferência. Recomenda-se o uso do [ECLIPSE](https://www.eclipse.org/downloads/). 
 2. Abra seu software de requisções HTTP.
 3. Abra seu banco H2 em seu browser de preferência.
@@ -74,23 +74,23 @@ password:
 }
 ```
 
-###### Consultar uma Pessoa
+##### Consultar uma Pessoa
 * Faça uma Requisição get no link http://localhost:8080/person/{id}
 * O {id} deve ser substituído pelo id da pessoa que quer consultar. Exemplo para consultar pessoa de id 1: http://localhost:8080/person/1
 * A resposta será no formato JSON, você pode acessá-lo pelo navegador também.
 
-###### Listar Pessoas
+##### Listar Pessoas
 * Faça uma Requisição get no link http://localhost:8080/person/
 * As pessoas já estão listadas no painel administrativo, mas, nesse endereço você receberá um JSON com a lista de todas pessoas e seus detalhes. Você pode acessá-lo no navegador.
 
-###### Deletar Pessoas
+##### Deletar Pessoas
 * Faça uma Requisição DELETE no link http://localhost:8080/person/{id}
 * O {id} deve ser substituído pelo id da pessoa que quer deletar. Exemplo para consultar pessoa de id 1: http://localhost:8080/person/1
 
-###### Outros recursos:
+##### Outros recursos:
 * Implementados a passo da conclusão do projeto.
 
-###### Arquitetura do Projeto
+#### Arquitetura do Projeto
 ```
 addresses
 
