@@ -7,31 +7,31 @@
 
 # Sobre o projeto
 Projeto prático com objetivo de criar uma API REST que otenha tais funcionalidades: 
-*Criar uma pessoa
-*Editar uma pessoa
-*Consultar uma pessoa
-*Listar pessoas
-*Criar endereço para pessoa
-*Listar endereços da pessoa
-*Poder informar qual endereço é o principal da pessoa
+* Criar uma pessoa
+* Editar uma pessoa
+* Consultar uma pessoa
+* Listar pessoas
+* Criar endereço para pessoa
+* Listar endereços da pessoa
+* Poder informar qual endereço é o principal da pessoa
 
-##Progresso
-*Projeto em desenvolvimento, progresso de 65%.
-*Funcionalidades restantes: 
+## Progresso
+* Projeto em desenvolvimento, progresso de 65%.
+* Funcionalidades restantes: 
                     1. Criar endereço para pessoa
                     2.Listar endereços da pessoa
 *Caso haja dúvidas ou considerações a fazer, envie um e-mail para: luiseduardobborges@gmail.com
 
 ## Tecnologias
-*Java 17
-*Springboot 3.0.1
-*H2 Database Engine
-*Apache Maven 3.8.6
-*Lombok 1.18.24
-*Postman v10.7.0
-*ModelMapper-spring 3.0.0
+* Java 17
+* Springboot 3.0.1
+* H2 Database Engine
+* Apache Maven 3.8.6
+* Lombok 1.18.24
+* Postman v10.7.0
+* ModelMapper-spring 3.0.0
 
-##Requisitos
+## Requisitos
 Necessário o uso do [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) e plugin maven. Para requisições HTTP use um software como o [POSTMAN](https://www.postman.com/downloads/).
 >Acesso banco H2(browser): http://localhost:8080/h2
 ```
@@ -46,10 +46,10 @@ password:
 3. Abra seu banco H2 em seu browser de preferência.
 
 
-#####Criar uma Pessoa
-*Faça a requisção no software HTTP: http://localhost:8080/person
-*Acesse através de um body usando formato JSON:
-*O id de PESSOA e ENDEREÇO são gerados automáticamente.
+##### Criar uma Pessoa
+* Faça a requisção no software HTTP: http://localhost:8080/person
+* Acesse através de um body usando formato JSON:
+* O id de PESSOA e ENDEREÇO são gerados automáticamente.
 ```
 {
     "name": "Luis",
@@ -74,23 +74,23 @@ password:
 }
 ```
 
-######Consultar uma Pessoa
-*Faça uma Requisição get no link http://localhost:8080/person/{id}
-*O {id} deve ser substituído pelo id da pessoa que quer consultar. Exemplo para consultar pessoa de id 1: http://localhost:8080/person/1
-*A resposta será no formato JSON, você pode acessá-lo pelo navegador também.
+###### Consultar uma Pessoa
+* Faça uma Requisição get no link http://localhost:8080/person/{id}
+* O {id} deve ser substituído pelo id da pessoa que quer consultar. Exemplo para consultar pessoa de id 1: http://localhost:8080/person/1
+* A resposta será no formato JSON, você pode acessá-lo pelo navegador também.
 
-######Listar Pessoas
-*Faça uma Requisição get no link http://localhost:8080/person/
-*As pessoas já estão listadas no painel administrativo, mas, nesse endereço você receberá um JSON com a lista de todas pessoas e seus detalhes. Você pode acessá-lo no navegador.
+###### Listar Pessoas
+* Faça uma Requisição get no link http://localhost:8080/person/
+* As pessoas já estão listadas no painel administrativo, mas, nesse endereço você receberá um JSON com a lista de todas pessoas e seus detalhes. Você pode acessá-lo no navegador.
 
-######Deletar Pessoas
-*Faça uma Requisição DELETE no link http://localhost:8080/person/{id}
-*O {id} deve ser substituído pelo id da pessoa que quer deletar. Exemplo para consultar pessoa de id 1: http://localhost:8080/person/1
+###### Deletar Pessoas
+* Faça uma Requisição DELETE no link http://localhost:8080/person/{id}
+* O {id} deve ser substituído pelo id da pessoa que quer deletar. Exemplo para consultar pessoa de id 1: http://localhost:8080/person/1
 
-######Outros recursos:
-*Implementados a passo da conclusão do projeto.
+###### Outros recursos:
+* Implementados a passo da conclusão do projeto.
 
-######Arquitetura do Projeto
+###### Arquitetura do Projeto
 ```
 addresses
 
