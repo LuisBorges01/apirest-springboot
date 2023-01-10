@@ -4,6 +4,7 @@ package br.com.lsborges.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.apache.catalina.startup.ClassLoaderFactory.Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -36,7 +37,6 @@ public class PersonServices {
 	}
 	/**/
 	public Optional<EntidadePessoa> findById(Long id) throws Exception {
-		enderecoRepository.findById(id);
 		return personRepository.findById(id);
 		}
 	/**/
@@ -65,7 +65,7 @@ public class PersonServices {
 		Optional<EntidadePessoa> pessoa = personRepository.findById(id);
 		EntidadePessoa newAddress = pessoa.get();
 		newAddress.setAddress(request);
-		return request; /*Ainda não funcionando*/
+		return request; 
 	}
 	/**/
 	public List<EntidadeEndereco> listAddres(Long id){
@@ -77,5 +77,8 @@ public class PersonServices {
 		EntidadePessoa buscando = personRepository.findById(id).get();
 		return buscando.getMainAddress();
 	}
-	
+	/**/
+	public void deletePerson(Long id) {
+		personRepository.deleteById(id);	
+	}
 }	

@@ -23,7 +23,7 @@ public class EntidadeEndereco implements Serializable{
 		
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private Long end_id;
 	@Column(name = "zipCode")
 	private String zipCode;
 	@Column(name = "place")
@@ -38,7 +38,7 @@ public class EntidadeEndereco implements Serializable{
 	
 	public EntidadeEndereco(EntidadePessoa person, Long id, String zipCode, String place, String city, String number) {
 		this.person = person;
-		this.id = id;
+		this.end_id = id;
 		this.zipCode = zipCode;
 		this.place = place;
 		this.city = city;
@@ -54,11 +54,11 @@ public class EntidadeEndereco implements Serializable{
 	}
 
 	public Long getId() {
-		return id;
+		return end_id;
 	}
 
 	public void setId(Long id) {
-		this.id = id;
+		this.end_id = id;
 	}
 
 	public String getZipCode() {

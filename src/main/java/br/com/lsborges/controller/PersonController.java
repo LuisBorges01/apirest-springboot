@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.observation.ClientHttpObservationDocumentation;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,6 +25,7 @@ import br.com.lsborges.model.EntidadeEndereco;
 import br.com.lsborges.model.EntidadeEnderecoPrincipal;
 import br.com.lsborges.model.EntidadePessoa;
 import br.com.lsborges.service.PersonServices;
+import lombok.Delegate;
 
 @RestController
 @RequestMapping("/person")
@@ -68,6 +70,11 @@ public class PersonController {
 	@GetMapping("/mainAddress/{id}")
 	public EntidadeEnderecoPrincipal searchMainAddress(@PathVariable("id") Long id) {
 		return services.searchMainAddress(id);
+	}
+	
+	@DeleteMapping("/{id}")
+	public void deletePerson(@PathVariable("id")Long id) {
+		return;
 	}
 	
 }
