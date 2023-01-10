@@ -17,9 +17,11 @@ Projeto prático com objetivo de criar uma API REST que otenha tais funcionalida
 
 ## Progresso
 * Projeto em desenvolvimento, progresso de 65%.
-* Funcionalidades restantes: 
+* Funcionalidades restantes:
+ 
                     1. Criar endereço para pessoa
                     2.Listar endereços da pessoa
+                   
 *Caso haja dúvidas ou considerações a fazer, envie um e-mail para: luiseduardobborges@gmail.com
 
 ## Tecnologias
