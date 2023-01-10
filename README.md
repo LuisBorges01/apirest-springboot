@@ -21,7 +21,7 @@ Projeto prático com objetivo de criar uma API REST que otenha tais funcionalida
  _Criar endereço para pessoa_
  _Listar endereços da pessoa_
  _Poder informar qual endereço é o principal da pessoa_
-*Caso haja dúvidas ou considerações a fazer, envie um e-mail para: luiseduardobborges@gmail.com
+>Caso haja dúvidas ou considerações a fazer, envie um e-mail para: luiseduardobborges@gmail.com
 
 ## Tecnologias
 * Java 17
